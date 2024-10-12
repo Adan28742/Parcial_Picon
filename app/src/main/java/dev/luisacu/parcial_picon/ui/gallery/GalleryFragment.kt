@@ -4,6 +4,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
+import android.widget.ListView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -16,6 +18,7 @@ class GalleryFragment : Fragment() {
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
+    private lateinit var listViewTeams: ListView
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -28,10 +31,21 @@ class GalleryFragment : Fragment() {
         _binding = FragmentGalleryBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textGallery
+        val textView: TextView = binding.textHome
         galleryViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
+        listViewTeams = binding.listViewTeams
+        val teams = arrayOf(
+            "GlobeGuard Inssuarance",
+            "SafeJourney Coverage",
+            "TravelShield Protection",
+            "VoyageSecure",
+            "WanderSure Travel Insurance"
+        )
+
+        val adapter = ArrayAdapter(requireContext(), android.R.layout.simple_list_item_1, teams)
+        listViewTeams.adapter = adapter
         return root
     }
 

@@ -17,4 +17,8 @@
     <string name="btnlogintxt">Sign In</string>
     <string name="txtemail">Email</string>
     <string name="txtpassd">Password</string>
+    <string name="menPre">Presupuesto</string>
+    <string name="menSeg">Seguros</string>
+    <string name="menHotel">Hoteles</string>
+    <string name="menPre2">Presupuesto</string>
 </resources>
