@@ -11,11 +11,11 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.textfield.TextInputLayout
 import dev.luisacu.parcial_picon.R
-import dev.luisacu.parcial_picon.databinding.FragmentSlideshowBinding
+import dev.luisacu.parcial_picon.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
 
-    private var _binding: FragmentSlideshowBinding? = null
+    private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -23,8 +23,9 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentSlideshowBinding.inflate(inflater, container,false)
+        _binding = FragmentHomeBinding.inflate(inflater, container,false)
         val root: View = binding.root
+
         val inputVuelo: EditText = root.findViewById(R.id.inputVuelo)
         val inputAloj: EditText = root.findViewById(R.id.inputAloj)
         val inputNoche: EditText = root.findViewById(R.id.inputNoche)
