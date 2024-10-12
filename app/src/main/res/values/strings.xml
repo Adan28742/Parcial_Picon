@@ -10,4 +10,11 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="t1Splash">TravelApp</string>
+    <string name="splashtx2">Tu compañero ideal para planificar y disfrutar de tus viajes. Con TravelApp, podras explorar destinos emocionantes, organizar itinerarios de alojamiento y actividades, todo desde la palma de tu mano. Ya sea que estes planeado unas vacaciones soñadas o un viaje de último minuto. TravelApp esta aqui para hacer que tu experiencia sea facil, eficiente y memorable. ¡Empieza a explorar el mundo con nosotros hoy mismo!</string>
+    <string name="btnstarted">GET STARTED</string>
+    <string name="sigtxt">Sign In</string>
+    <string name="btnlogintxt">Sign In</string>
+    <string name="txtemail">Email</string>
+    <string name="txtpassd">Password</string>
 </resources>
